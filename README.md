@@ -2,6 +2,17 @@
 
 ![App screenshot](./ss.png)
 
+Multi-chain faucet is a website faucet for the needs of providing testnet crypto coins by supporting multiple networks at once.
+
+Supported networks:
+
+* Goerli (ETH)
+* Bsc testnet (BNB)
+* Polygon mumbai testnet (MATIC)
+* Avalanche testnet (AVAX)
+* Fantom testnet (FTM)
+* Cronos testnet (CRO)
+
 ## Tech stack
 
 * Expressjs
@@ -50,12 +61,37 @@ This faucet need a database to storing all request, edit the configuration file 
   ...
 ```
 
+Run migration
+
+```sh
+npm run migrate
+```
+
 ### Global configuration
 
 Everything you need to change is on .env file
 
 > Note: because there is no security guarantee, make sure you enter a special private key for the faucet only
 
+### Run server & worker
+
+Run web server
+
+```sh
+npm run dev
+```
+
+or for production
+
+```sh
+npm start
+```
+
+Run worker process
+
+```sh
+npm run worker
+```
 
 ## License
 
