@@ -51,7 +51,7 @@ const {
 					gasLimit: 21000,
 					gasPrice: gasPrice,
 					chainId: rpcConfig[1],
-					privateKey: process.env.WALLET_PRIVATEKEY
+					privateKey: privateKey
 				});
 
 				await sendingTransaction(web3, txSigned);
