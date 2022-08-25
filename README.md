@@ -1,5 +1,7 @@
 # Multi-chain Faucet
 
+![App screenshot](./ss.png)
+
 ## Tech stack
 
 * Expressjs
@@ -52,8 +54,7 @@ This faucet need a database to storing all request, edit the configuration file 
 
 Everything you need to change is on .env file
 
-> Warning!
-> Because there is no security guarantee, make sure you enter a special private key for the faucet only
+> Note: because there is no security guarantee, make sure you enter a special private key for the faucet only
 
 
 ## License
