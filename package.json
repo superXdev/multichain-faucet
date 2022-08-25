@@ -20,9 +20,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "npx nodemon index.js",
+    "dev": "npx nodemon -w .env index.js",
     "migrate": "npx sequelize-cli db:migrate",
-    "worker": "nodemon worker/main.js"
+    "worker": "node worker/main.js"
   },
   "keywords": [],
   "author": "",
